@@ -1,0 +1,2 @@
+recursive-include pubstats/data *.csv *.json
+include README.md

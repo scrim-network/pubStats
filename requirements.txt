@@ -1,0 +1,9 @@
+html5lib==1.0.1
+Pillow==5.2.0
+prettytable==0.7.2
+PyPDF2==1.26.0
+reportlab==3.5.6
+six==1.11.0
+webencodings==0.5.1
+wheel==0.29.0
+xhtml2pdf==0.2.3
