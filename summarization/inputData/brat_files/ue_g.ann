@@ -1,0 +1,7 @@
+T1	collaboration 23 77	to collaborate with researchers from other disciplines
+T2	collaboration 182 234	that have already enabled this kind of collaboration
+T3	research 151 181	to get different projects done
+T4	collaboration 840 940	wasn't 
+A1	disciplines T1
+A2	disciplines T4
+A3	skill_sets T4

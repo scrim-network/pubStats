@@ -1,0 +1,14 @@
+T1	motivation 104 177	t
+T2	motivation 314 452	r b
+T3	research 1514 1574	And then also the RDM and multi-objective tradeoff analysis,
+T4	motivation 1696 1776	less motiv
+T5	research 1344 1382	So the stakeholder engagement element,
+A1	uncertainty T2
+A2	values T2
+A3	disciplines T1
+A4	stakeholders T5
+A5	uncertainty T4
+A6	decision T5
+A7	decision T3
+A8	uncertainty T3
+A9	values T3

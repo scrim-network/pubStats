@@ -1,0 +1,31 @@
+T1	research 173 333	developsing
+T2	research 486 569	to show thbe ap
+T3	collaboration 866 947	and t
+T4	collaboration 1408 1583	engineers and
+T5	design 2726 2790	wha we were going t
+T6	collaboration 2801 2943	so mrtant and
+T7	collaboration 2945 2987	An
+T8	design 2989 3015	ell, how do we model it?
+T9	design 2583 2725	when we
+T10	design 3016 3205	If  engage with that
+T11	design 3934 4176	thinkoesn't matter anyway
+T12	motivation 4178 4195	what are we doing
+T13	design 4497 4555	kind of trying to figu
+T14	motivation 5202 5324	 havincommunity
+T15	collaboration 3760 3835	but themething val
+A1	new_topic T1
+A2	new_topic T2
+A3	disciplines T3
+A4	disciplines T4
+A5	stakeholders T9
+A6	values T5
+A7	disciplines T6
+A8	disciplines T7
+A9	values T10
+A10	values T11
+A11	stakeholders T13
+A12	values T13
+A13	stakeholders T14
+A14	uncertainty T1
+A15	values T6
+A16	decision T14

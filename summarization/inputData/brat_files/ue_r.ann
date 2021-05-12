@@ -1,0 +1,16 @@
+T1	collaboration 162 278	But toand up on these different fields
+T2	collaboration 24 160	I'de research kind of all by my lonesome
+T3	research 773 917	I jum'd done in meteorology up to that point.
+T4	research 918 1025	But alsation, but multi-objective optimization
+T5	research 1200 1331	The fiformulation of an integrated assessment model.
+T6	research 1027 1109	So it's edge of a completely different field
+A1	skill_sets T2
+A2	disciplines T1
+A3	decision T3
+A4	new_topic T3
+A5	decision T4
+A6	disciplines T6
+A7	new_topic T6
+A8	decision T5
+A9	values T5
+A10	values T4

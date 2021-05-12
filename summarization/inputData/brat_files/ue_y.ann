@@ -1,0 +1,24 @@
+T1	collaboration 55 127	the firs
+T2	research 153 241	makin and dec
+T3	research 395 539	so it ion analysi
+T4	research 1040 1187	lotdn a more r
+T5	collaboration 1928 1968	that has all o
+T6	collaboration 2192 2357	but that you need
+T7	collaboration 2434 2581	I
+T8	collaboration 2662 2733	having
+T9	design 0 2805
+T10	design 2777 2832	a lo
+A1	decision T2
+A2	disciplines T3
+A3	decision T3
+A4	uncertainty T3
+A5	new_topic T3
+A6	disciplines T4
+A7	uncertainty T4
+A8	disciplines T5
+A9	skill_sets T5
+A10	disciplines T6
+A11	skill_sets T6
+A12	disciplines T7
+A13	disciplines T8
+A14	sustained T8

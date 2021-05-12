@@ -1,0 +1,21 @@
+T1	research 6 83	I think none of it w
+T2	collaboration 173 199	then when I came to Klaus,
+T3	design 200 247	we were able to define a v
+T4	research 334 464	the proble decinmental systems
+T5	collaboration 596 668	we were all able
+T6	research 474 517	it was new to me
+T7	collaboration 875 975	a lot of that I remembjectives
+T8	collaboration 976 1066	and how then that
+T9	design 1135 1203	SCRiM gave the opportun
+T10	motivation 252 328	it was  to go
+T11	mentoring 173 247	then when I came different problem
+A1	disciplines T1
+A2	new_topic T1
+A3	new_topic T3
+A4	decision T4
+A5	new_topic T6
+A6	skill_sets T5
+A7	values T7
+A8	decision T8
+A9	disciplines T9
+A10	disciplines T5

@@ -1,0 +1,14 @@
+T1	design 50 114	a lot more attentiveness to the, you know, the ethical component
+T2	research 116 238	I'm reall
+T3	infrastructure 259 355	that whi,
+T4	infrastructure 971 1023	it's
+T5	research 1032 1057	trying out some new ideas
+T6	research 1059 1122	The cross impa
+T7	code 404 523	through 
+A1	values T1
+A2	values T2
+A3	new_topic T5
+A4	decision T2
+A5	uncertainty T2
+A6	decision T6
+A7	uncertainty T6
