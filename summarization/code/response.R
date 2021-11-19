@@ -100,7 +100,7 @@ par(cex=1, xpd=TRUE, mfrow=c(4,1), mar=c(2,5,0.7,0), oma=c(4,4,0,4)) # note to s
 # legend
 plot.new()
 legend(-.2,.3, legend=c("level of understanding (self assessed)","importance to achieving research goals"), 
-       fill=c(paired[9],"white"), border=c("#CAB2D6","black"), bty="n", xpd=TRUE)
+       fill=c("#CAB2D6","white"), border=c("#CAB2D6","black"), bty="n", xpd=TRUE)
 
 # panel a
 barplot(multi.u/sum(multi.u), space=0, col="#CAB2D6", border="#CAB2D6", xlim=c(0,6), ylim=c(0,.65), xpd=FALSE, ylab="frequency", names.arg=FALSE, axes=FALSE)
@@ -196,59 +196,62 @@ par(mfrow=c(2,3), mar=c(4,3.25,3,0), oma=c(1,2,0,2), cex.main=1.1)
 overlay<-"olivedrab3" # define the color for the discipline-based coauthorship points in panels c and f
 
 # panel a
-plot(x[faculty.mPM],y[faculty.mPM], pch=15, cex=1, main="a. funding (faculty)", xlab="", ylab="", ylim=c(1,5), xlim=c(0.8,14.6), xaxt="n")
+plot(x[faculty.mPM],y[faculty.mPM], pch=15, cex=1, main="a. funding (faculty)", xlab="", ylab="", ylim=c(1,5), xlim=c(.5,28.5),
+     #xlim=c(0.8,14.6), 
+     xaxt="n")
 abline(lin.funds.fac.mPM)
-points(x[PM.id]-28,y[PM.id], pch=15, col="gray45")
+points(x[PM.id]-15,y[PM.id], pch=15, col="gray45")
 
-text(x[which.max(personnel$months)]-28.2, y[which.max(personnel$months)]+.27, labels="PM", cex=.9, col="gray45") # add project manager separately
-text(11.2, 1.9, labels="  not included \nin regression", cex=1, col="gray45") # add text to plot
-segments( 12.6,2.4, x[PM.id]-28.15,y[PM.id]-.17,  lwd=.8, col="gray45")
+text(x[which.max(personnel$months)]-15.1, y[which.max(personnel$months)]+.27, labels="PM", cex=.9, col="gray45") # add project manager separately
+text(19, 1.9, labels="  not included \nin regression", cex=1, col="gray45") # add text to plot
+segments(22,2.3, x[PM.id]-15.15,y[PM.id]-.17,  lwd=.8, col="gray45")
 
-axis(1, at=c(2,4,6,8,10,14), labels=c(2,4,6,8,10,42))
-axis.break(axis=1, 12.5, style="slash", brw=.036)
+axis(1, at=c(0,5,10,15,20,25), labels=c(0,5,10,15,20,40))
+axis.break(axis=1, 22.5, style="slash", brw=.036)
 
 title(ylab="mean understanding", line=2.5, cex.lab=1)
 title(xlab="funding (months)", line=2.25, cex.lab=1)
 
 # panel b
-plot(x2[faculty],y[faculty], pch=15, cex=1, main="b. attendance (faculty)", xlab="", ylab="",yaxt="n", ylim=c(1,5))
+plot(x2[faculty],y[faculty], pch=15, cex=1, main="b. attendance (faculty)", xlab="", ylab="",yaxt="n", ylim=c(1,5), xlim=c(0,10))
 abline(lin.attend.fac)
 
 title(xlab="project events attended (#)", line=2.25, cex.lab=1)
 
 # panel c
-plot(x3[faculty.mPI],y[faculty.mPI], pch=15, cex=1, main="c. coauthorship (faculty)", xlab="", ylab="",yaxt="n", ylim=c(1,5), xlim=c(0,28.5), xaxt="no")
+plot(x3[faculty.mPI],y[faculty.mPI], pch=15, cex=1, main="c. coauthorship (faculty)", xlab="", ylab="",yaxt="n", ylim=c(1,5), xlim=c(0,26), xaxt="no")
 abline(lin.coauthor.fac.mPI)
 
 points(x3.alt[faculty.mPI],y[faculty.mPI], cex=2, main="c. coauthorship (faculty)", xlab="", ylab="",yaxt="n", ylim=c(1,5), col=overlay)
 abline(lin.coauthor.alt.fac.mPI, col=overlay)
 
-points(x3[PI.id]-41, y[PI.id], pch=15, col="gray50") # add PI separately
-text(x3[PI.id]-41.1, y[PI.id]+.26, labels="PI", cex=.9, col="gray50")
-text(21.5, 2.8, labels="  not included \nin regression", cex=1, col="gray50")
-segments( 25.5,3.3, x3[PI.id]-41.3, y[PI.id]-.17,  lwd=.8, col="gray50")
-
-axis(1, at=c(0,5,10,15,20,27), labels=c(0,5,10,15,20,68))
-axis.break(axis=1, 24.7, style="slash", brw=.036)
+points(x3[PI.id]-43, y[PI.id], pch=15, col="gray50") # add PI separately
+text(x3[PI.id]-43.1, y[PI.id]+.26, labels="PI", cex=.9, col="gray50")
+text(19.5, 2.8, labels="  not included \nin regression", cex=1, col="gray50")
+segments(23.5,3.3, x3[PI.id]-43.3, y[PI.id]-.17,  lwd=.8, col="gray50")
 
 legend("bottomright", legend=c("department", "discipline"), col=c("black",overlay), pch=c(15,1), pt.cex=c(1,1.6))
 title(xlab="coauthorship outside dept./disc.", line=2.25, cex.lab=1)
 
+axis(1, at=c(0,5,10,15,20,25), labels=c(0,5,10,15,20,68))
+axis.break(axis=1, 23, style="slash", brw=.036)
+
 # panel d
-plot(x[postdocs],y[postdocs], pch=16, cex=1.1, xlab="", ylab="", ylim=c(1,5), main="d. funding (postdocs)")
+plot(x[postdocs],y[postdocs], pch=16, cex=1.1, xlab="", ylab="", ylim=c(1,5), xlim=c(.5,28.5), main="d. funding (postdocs)")
 abline(lin.funds.post)
 
 title(ylab="mean understanding", line=2.5, cex.lab=1)
 title(xlab="funding (months)", line=2.25, cex.lab=1)
 
 # panel e
-plot(x2[postdocs],y[postdocs], pch=16, cex=1.1, xlab="", ylab="", yaxt="n", ylim=c(1,5), main="e. attendance (postdocs)")
+plot(x2[postdocs],y[postdocs], pch=16, cex=1.1, xlab="", ylab="", yaxt="n", ylim=c(1,5), xlim=c(0,10), main="e. attendance (postdocs)")
 abline(lin.attend.post)
 
 title(xlab="project events attended (#)", line=2.25, cex.lab=1)
 
 # panel f
-plot(x3[postdocs],y[postdocs], pch=16, cex=1.1, xlab="", ylab="", yaxt="n", ylim=c(1,5), main="f. coauthorship (postdocs)", xlim=c(0,15.2))
+plot(x3[postdocs],y[postdocs], pch=16, cex=1.1, xlab="", ylab="", yaxt="n", ylim=c(1,5), main="f. coauthorship (postdocs)", xlim=c(0,25))
+#xlim=c(0,15.2))
 abline(lin.coauthor.post)
 points(x3.alt[postdocs],y[postdocs], cex=2, xlab="", ylab="", yaxt="n", ylim=c(1,5), main="f. coauthorship (postdocs)", col=overlay)
 abline(lin.coauthor.alt.post, col=overlay)
